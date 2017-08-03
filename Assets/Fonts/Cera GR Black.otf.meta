@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f9f05020be9874f18ab743c49d36c7ca
+timeCreated: 1500904733
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: CeraGR-Black
+  fontNames:
+  - CeraGR-Black
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

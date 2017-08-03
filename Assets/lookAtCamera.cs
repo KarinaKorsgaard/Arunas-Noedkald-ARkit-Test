@@ -1,0 +1,34 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class lookAtCamera : MonoBehaviour {
+
+	// Use this for initialization
+	public Transform body;
+	public Transform head;
+	public Transform target;
+
+	public float rotationSpeed = 1.0f;
+
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		var lookPos = target.position - body.position;
+		lookPos.y = 0;
+		var newRotation = Quaternion.LookRotation(lookPos);
+		body.rotation = Quaternion.Slerp(body.rotation, newRotation, Time.deltaTime * rotationSpeed);
+
+		lookPos = target.position - head.position;
+		newRotation = Quaternion.LookRotation(lookPos);
+
+		var headFull = Quaternion.Slerp(head.rotation, newRotation, Time.deltaTime * rotationSpeed) ;
+		float angle = Quaternion.Angle(headFull, body.rotation);
+		//if(angle < 80)
+		head.rotation = headFull;
+
+	}
+}
