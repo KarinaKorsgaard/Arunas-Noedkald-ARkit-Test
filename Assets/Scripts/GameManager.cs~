@@ -17,7 +17,7 @@ namespace UnityEngine.XR.iOS
 		private bool hasBeenActivatedOnLocation;
 
 		public GameObject arObjects, models, maps;
-		public UnityARCameraManager arCamManager;
+		public CustomARCameraManager arCamManager;
 
 		public Button beginButton;
 
@@ -89,14 +89,14 @@ namespace UnityEngine.XR.iOS
 			print ("" + sphereCount);
 
 			DebugConsole.Log ("reset tracking");
+
 			arCamManager.resetTracking ();
 			EventManager.TriggerEvent ("PlaceObjectsOnFloor");
 
 		}
+
 		public void addSphere(GameObject go){
-			
 			spheres.Add (go);
-		
 		}
 
 		private void setMapARModel(bool map, bool ar, bool model){
@@ -168,7 +168,7 @@ namespace UnityEngine.XR.iOS
 
 				if (lat_to_distance (g.lat_d, g.lon_d, b.geoLocation.lat_d, b.geoLocation.lon_d) < 10f) {
 					hasBeenActivatedOnLocation = true;
-				} else if (Input.touchCount > 2 || Input.GetKey ("b")) {
+				} else if (Input.touchCount > 2 || Input.GetKey ("b") || Input.touchCount>2 ) {
 					hasBeenActivatedOnLocation = true;
 				}
 

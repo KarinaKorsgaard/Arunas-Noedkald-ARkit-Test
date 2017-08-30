@@ -8,9 +8,7 @@ public class UnityARCameraManager : MonoBehaviour {
     public Camera m_camera;
     private UnityARSessionNativeInterface m_session;
 	private Material savedClearMaterial;
-	public int currentConfig = 0;
-	ARKitWorldTackingSessionConfiguration config;
-	ARKitWorldTackingSessionConfiguration configNoPlane;
+
 	// Use this for initialization
 	void Start () {
 
@@ -18,15 +16,11 @@ public class UnityARCameraManager : MonoBehaviour {
 
 #if !UNITY_EDITOR
 		Application.targetFrameRate = 60;
-        config = new ARKitWorldTackingSessionConfiguration();
+        ARKitWorldTackingSessionConfiguration config = new ARKitWorldTackingSessionConfiguration();
         config.planeDetection = UnityARPlaneDetection.Horizontal;
         config.alignment = UnityARAlignment.UnityARAlignmentGravity;
         config.getPointCloudData = true;
         config.enableLightEstimation = true;
-
-		configNoPlane = config;
-		configNoPlane.planeDetection = UnityARPlaneDetection.None;
-
         m_session.RunWithConfig(config);
 
 		if (m_camera == null) {
@@ -42,25 +36,6 @@ public class UnityARCameraManager : MonoBehaviour {
 		UnityARSessionNativeInterface.SetStaticCamera (scamera);
 
 #endif
-	}
-
-	public void disablePlanetracking(){
-		m_session.RunWithConfig(configNoPlane);
-		currentConfig = 1;
-	}
-
-	public void enablePlanetracking(){
-		m_session.RunWithConfig(config);
-		currentConfig = 0;
-	}
-
-	public void pauseTracking(){
-		m_session.Pause ();
-	}
-
-	public void resetTracking(){
-		m_session.RunWithConfigAndOptions(config, UnityARSessionRunOption.ARSessionRunOptionResetTracking);
-		currentConfig = 0;
 	}
 
 	public void SetCamera(Camera newCamera)

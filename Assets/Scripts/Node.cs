@@ -17,6 +17,7 @@ namespace UnityEngine.XR.iOS
 		public Node link_yes;
 		[Tooltip("DEFAULT: if none is specified, the default will be the NO node. If this does not existm the default will be the yes node.")]
 		public Node link_default;
+		public PlayableDirector idle_Animation;
 
 		private double duration;
 		private double timeRunningOut;
@@ -49,6 +50,9 @@ namespace UnityEngine.XR.iOS
 			optionOne = true;
 			theAnimation = gameObject.GetComponent<PlayableDirector> ();
 			duration = theAnimation.duration;
+
+			if (idle_Animation == null)
+				idle_Animation = GameObject.Find ("NodeManager").GetComponent<PlayableDirector> ();
 		}
 
 		public void ResetNode(){
@@ -79,6 +83,7 @@ namespace UnityEngine.XR.iOS
 			yield return new WaitForSeconds ((float)duration);
 			if (getNextNode () != null) {
 				EventManager.TriggerEvent ("ActivateUI");
+				idle_Animation.Play ();
 				yield return new WaitForSeconds ((float)timeRunningOut);
 			} 
 			else {
@@ -95,9 +100,12 @@ namespace UnityEngine.XR.iOS
 		}
 
 		private void stopNode(){
+			idle_Animation.Stop ();
+
 			EventManager.TriggerEvent ("DeactivateUI");
 			EventManager.TriggerEvent ("NodeStopped");
 			isPlaying = false;
+
 		}
 
 		private int numberOfNodeLinks(){

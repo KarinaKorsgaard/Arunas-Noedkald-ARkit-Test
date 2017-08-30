@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Name: Node_JegForstaarIkkeTimeline
   m_EditorClassIdentifier: 
   m_Id: 0
-  m_NextId: 6
+  m_NextId: 8
   m_Tracks:
   - {fileID: 114409500390354400}
   - {fileID: 114633619118715274}
-  - {fileID: 114857610815026932}
   - {fileID: 114030473927552696}
+  - {fileID: 114345919766587058}
   m_FixedDuration: 0
   m_EditorSettings:
     fps: 60
@@ -413,6 +413,92 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+--- !u!114 &114345919766587058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3962cc21951945288e73230d0e3315b, type: 3}
+  m_Name: Lookat Track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_Soloed: 0
+  m_Height: 0
+  m_InlineAnimationCurveHeight: 100
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Start: 4.133333333333334
+    m_ClipIn: 0
+    m_Asset: {fileID: 114857423207076840}
+    m_UnderlyingAsset: {fileID: 114857423207076840}
+    m_Duration: 5
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114345919766587058}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: -1639866956
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: Infinity
+    m_PreExtrapolationTime: 4.133333333333334
+    m_DisplayName: lookatClip
 --- !u!114 &114409500390354400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -669,6 +755,23 @@ MonoBehaviour:
     defaultValue: {fileID: 0}
   endLocation:
     exposedName: daa2b6ea8ffb240b3ac01e5b39710d3d
+    defaultValue: {fileID: 0}
+--- !u!114 &114857423207076840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0257aba1f223749a7b8502d01f6e4526, type: 3}
+  m_Name: lookatClip
+  m_EditorClassIdentifier: 
+  template:
+    target: {fileID: 0}
+    speed: 1
+  target:
+    exposedName: 639b5276b9ca3465b84f889e68e8a8c6
     defaultValue: {fileID: 0}
 --- !u!114 &114857610815026932
 MonoBehaviour:
