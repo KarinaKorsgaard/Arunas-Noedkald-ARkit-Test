@@ -8,6 +8,7 @@ namespace UnityEngine.XR.iOS
 		[HideInInspector]public bool placed = true;
 		public Transform m_HitTransform;
 
+		// messages arhit test subscribes to
 		void OnEnable ()
 		{
 			EventManager.StartListening ("PlaceObjectsOnFloor", PlaceObjectsOnFloor);
@@ -19,6 +20,8 @@ namespace UnityEngine.XR.iOS
 		}
 
 	
+		// function that test if a ARPoint hits a result type (here only a plane is a valid result) 
+		// places the linked transform on the surface and returns true if it found a valid point 
 		bool HitTestWithResultType (ARPoint point, ARHitTestResultType resultTypes)
 		{
 			List<ARHitTestResult> hitResults = UnityARSessionNativeInterface.GetARSessionNativeInterface ().HitTest (point, resultTypes);
@@ -34,24 +37,24 @@ namespace UnityEngine.XR.iOS
 			return false;
 		}
 
+		// the function that is triggered when the message "PlaceObjectOnFloor" is received
 		void PlaceObjectsOnFloor(){
 			placed = false;
 			print ("hit test is placing");
 		}
 
 
+
 		void Update () {
-			if (Input.touchCount > 0) {
-				var touch = Input.GetTouch (0);
-				if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved) {
-					Debug.Log (m_HitTransform.position);
-				}
-			}
+
 			if (!placed) {
 
+				// make a point that is the middle of the screen 
 				var screenMiddle = new Vector2 (Screen.width / 2f, Screen.height / 2f);
+				// translate that point to Unity coordinates 
 				var screenPosition = Camera.main.ScreenToViewportPoint(screenMiddle);
 
+				// transform to a new ARPoint
 				ARPoint point = new ARPoint {
 					x = screenPosition.x,
 					y = screenPosition.y
@@ -66,6 +69,7 @@ namespace UnityEngine.XR.iOS
 					//ARHitTestResultType.ARHitTestResultTypeFeaturePoint
 				}; 
 
+				// run through result types and see if the ARPoint hits a valid surface
 				foreach (ARHitTestResultType resultType in resultTypes) {
 					if (HitTestWithResultType (point, resultType)) {
 						placed = true;
@@ -77,9 +81,7 @@ namespace UnityEngine.XR.iOS
 					{
 						placed = true;
 						EventManager.TriggerEvent ("StartBlock");
-
 						return;
-
 					} 
 					else {
 						m_HitTransform.position = new Vector3 (1000f, 1000f, 1000f);

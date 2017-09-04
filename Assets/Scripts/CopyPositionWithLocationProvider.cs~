@@ -89,11 +89,12 @@
 
 		void Update()
 		{
-			//	Vector3 distance = transform.position - blockGeoPosition.ToVector3xz();
-			// calc distance 
+
 			Vector3 pos = new Vector3(-1,-1,-1);
+
 			if ((Input.GetMouseButtonDown (0) && mouseIsLiftet))
 				pos = Input.mousePosition;
+			
 			else if ((Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Began))
 				pos = Input.GetTouch (0).position;
 
@@ -104,9 +105,6 @@
 				Vector3 worldCoord = mainCamera.ScreenToWorldPoint(pos);
 				worldCoord.y = 1;
 				sHolder.addSphere (worldCoord);
-
-
-				//sphere.GetComponent<sphereHolder>().sphere.transform.position = worldCoord;
 
 				mouseIsLiftet = false;
 

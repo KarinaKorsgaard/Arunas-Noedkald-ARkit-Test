@@ -38,3 +38,4 @@
 /Users/karinajensen/Desktop/Tommy AR/development/NC/Temp/bin/Debug/UnityEditor.iOS.Extensions.Xcode.xml
 /Users/karinajensen/Desktop/Tommy AR/development/NC/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll
 /Users/karinajensen/Desktop/Tommy AR/development/NC/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll.mdb
+/Users/karinajensen/Desktop/Tommy AR/development/NC/Temp/bin/Debug/Mapbox.Json.dll
