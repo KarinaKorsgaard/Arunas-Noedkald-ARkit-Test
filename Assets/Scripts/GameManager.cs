@@ -7,23 +7,20 @@ using UnityEngine.XR.iOS;
 
 public class GameManager : GenericSingletonClass<GameManager> {
 
-	//private int markerCount = 1;
-	//public List<GameObject> spheres;
-	private sphereHolder sHolder;
-	GameObject player;
-	//public PlayerLocationService playerLocationService;
+
 	public NodeManager nodemanager;
-	private int blockCount;
-	private bool isAr = false;
-	private bool hasBeenActivatedOnLocation;
+	public float MinDistance;
 
 	public GameObject arObjects, models, maps;
-//	public CustomARCameraManager arCamManager;
-
 	public Button beginButton;
 
 	private bool hasBeenPaused = false;
-	// Use this for initialization
+	private int blockCount;
+	private bool isAr = false;
+	private bool hasBeenActivatedOnLocation;
+	private sphereHolder sHolder;
+	GameObject player;
+
 	void Start () {
 		setMapARModel (true, false, false);
 		beginButton.gameObject.SetActive (false);
@@ -38,18 +35,21 @@ public class GameManager : GenericSingletonClass<GameManager> {
 		EventManager.StartListening ("loadGPSMap",loadGPSMap);
 		EventManager.StartListening ("LocationFound",loadARScene);
 		EventManager.StartListening ("DisablePlaneTracking",DisablePlaneTracking);
-
 	}
+
 	void OnDisable(){
 		EventManager.StopListening ("RestartGame", RestartGame);
 		EventManager.StopListening ("loadGPSMap",loadGPSMap);
 		EventManager.StopListening ("LocationFound",loadARScene);
 		EventManager.StartListening ("DisablePlaneTracking",DisablePlaneTracking);
 	}
+
+
 	// Update is called once per frame
 	void Update () {
 
 	}
+
 	void RestartGame(){
 		//spheres.Clear ();
 		//GameObject.Find ("MarkerAdder").gameObject.SetActive(true);
@@ -66,7 +66,7 @@ public class GameManager : GenericSingletonClass<GameManager> {
 
 		isAr = false;
 
-		print ("loading gps map");
+		Debug.Log ("LOAD GPS MAP");
 		setMapARModel (true,false,false);
 
 
@@ -93,7 +93,6 @@ public class GameManager : GenericSingletonClass<GameManager> {
 
 		//arCamManager.resetTracking ();
 		EventManager.TriggerEvent ("PlaceObjectsOnFloor");
-
 	}
 
 
@@ -143,7 +142,7 @@ public class GameManager : GenericSingletonClass<GameManager> {
 		Block b = nodemanager.getCurrentBlock ();
 		while (!hasBeenActivatedOnLocation) {
 
-			if (Vector3.Distance(player.transform.position, b.getPositionOnMap())<10f) {
+			if (Vector3.Distance(player.transform.position, b.getPositionOnMap())<MinDistance) {
 				hasBeenActivatedOnLocation = true;
 			} else if (Input.touchCount > 2 || Input.GetKey ("b") || Input.touchCount>2 ) {
 				hasBeenActivatedOnLocation = true;

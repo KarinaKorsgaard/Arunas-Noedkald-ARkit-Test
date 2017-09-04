@@ -32,5 +32,11 @@ MonoBehaviour:
       showInlineCurves: 0
   - timeInFrames: 1
     timeAreaShownRange: {x: -0.19065966, y: 16.644587}
-    m_Keys: []
-    m_Vals: []
+    m_Keys:
+    - {fileID: 114294385041989332, guid: 1a2b2a39f1365475281c441cf82a1d7f, type: 2}
+    - {fileID: 114903990636447232, guid: 1a2b2a39f1365475281c441cf82a1d7f, type: 2}
+    m_Vals:
+    - collapsed: 1
+      showInlineCurves: 0
+    - collapsed: 0
+      showInlineCurves: 0

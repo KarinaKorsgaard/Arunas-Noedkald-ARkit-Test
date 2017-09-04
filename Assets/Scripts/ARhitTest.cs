@@ -77,6 +77,7 @@ namespace UnityEngine.XR.iOS
 					{
 						placed = true;
 						EventManager.TriggerEvent ("StartBlock");
+
 						return;
 
 					} 

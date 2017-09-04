@@ -67,15 +67,7 @@ namespace UnityEngine.XR.iOS
 			}
 		}
 
-//		private void SwitchDirectionTrue(){
-//			SwithDirection (true);
-//		}
-//
-//		private void SwitchDirectionFalse(){
-//			SwithDirection (false);
-//		}
-//
-//
+
 
 		private IEnumerator Play(){
 			

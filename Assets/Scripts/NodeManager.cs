@@ -101,7 +101,7 @@ public class NodeManager : MonoBehaviour
 			currentBlock = tempBlock;
 			currentBlock.gameObject.SetActive (true);
 
-			EventManager.TriggerEvent ("loadGPSMap");
+
 
 		} else {
 			print ("THE END");
