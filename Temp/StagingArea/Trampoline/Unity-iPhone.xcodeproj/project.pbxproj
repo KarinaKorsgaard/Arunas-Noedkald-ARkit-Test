@@ -1373,6 +1373,8 @@
 					"-lz",
 					"-ObjC",
 					"-lz",
+					"-ObjC",
+					"-lz",
 					"-ObjC -lz",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.karina.arkitscene;
@@ -1438,6 +1440,8 @@
 					"-weak_framework",
 					CoreMotion,
 					"-weak-lSystem",
+					"-ObjC",
+					"-lz",
 					"-ObjC",
 					"-lz",
 					"-ObjC",
@@ -1637,6 +1641,8 @@
 					"-lz",
 					"-ObjC",
 					"-lz",
+					"-ObjC",
+					"-lz",
 					"-ObjC -lz",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.karina.arkitscene;
@@ -1769,6 +1775,8 @@
 					"-weak_framework",
 					CoreMotion,
 					"-weak-lSystem",
+					"-ObjC",
+					"-lz",
 					"-ObjC",
 					"-lz",
 					"-ObjC",

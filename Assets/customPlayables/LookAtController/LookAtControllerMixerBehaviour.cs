@@ -5,7 +5,7 @@ using UnityEngine.Timeline;
 
 public class LookAtControllerMixerBehaviour : PlayableBehaviour
 {
-	bool m_FirstFrameHappened;
+	bool m_FirstFrameHappened = false;
 
 	public override void ProcessFrame(Playable playable, FrameData info, object playerData)
 	{
@@ -17,8 +17,8 @@ public class LookAtControllerMixerBehaviour : PlayableBehaviour
 		Vector3 defaultPosition = trackBinding.position;
 		Quaternion defaultRotation = trackBinding.rotation;
 
-		//Vector3 defaultheadPosition;
-		Quaternion defaultheadRotation = new Quaternion(0f, 0f, 0f, 0f);;
+		Vector3 defaultheadPosition = new Vector3(0f, 0f, 0f);
+		Quaternion defaultheadRotation = new Quaternion(0f, 0f, 0f, 0f);
 
 		int inputCount = playable.GetInputCount ();
 
@@ -27,13 +27,15 @@ public class LookAtControllerMixerBehaviour : PlayableBehaviour
 
 		Quaternion blendedRotation = new Quaternion(0f, 0f, 0f, 0f);
 		Quaternion blendedheadRotation = new Quaternion(0f, 0f, 0f, 0f);
-		//Transform headTransform;
+		Transform headTransform = trackBinding;
 
 
 		for (int i = 0; i < inputCount; i++)
 		{
 			ScriptPlayable<LookAtControllerBehaviour> playableInput = (ScriptPlayable<LookAtControllerBehaviour>)playable.GetInput (i);
 			LookAtControllerBehaviour input = playableInput.GetBehaviour ();
+
+			headTransform = input.neckBone;
 
 			if(input.endLocation == null)
 				continue;
@@ -42,7 +44,13 @@ public class LookAtControllerMixerBehaviour : PlayableBehaviour
 
 			input.startingPosition = defaultPosition;
 			input.startingRotation = defaultRotation;
-			defaultheadRotation = input.neckBone.rotation;
+
+			if (!m_FirstFrameHappened) {
+				m_FirstFrameHappened = true;
+				Debug.Log("SET ROTATION");
+				defaultheadRotation = input.neckBone.rotation;
+				defaultheadPosition = input.neckBone.position;
+			}
 
 			float normalisedTime = (float)(playableInput.GetTime() * input.inverseDuration);
 			float tweenProgress = input.currentCurve.Evaluate(normalisedTime);
@@ -52,22 +60,24 @@ public class LookAtControllerMixerBehaviour : PlayableBehaviour
 			var lookPos = input.endLocation.position - input.startingPosition;
 			lookPos.y = 0;
 			var newRotation = Quaternion.LookRotation(lookPos);
-			Quaternion desiredRotation = Quaternion.Lerp(input.startingRotation, newRotation, tweenProgress);
+			Quaternion desiredRotation = Quaternion.Lerp(input.startingRotation, newRotation, tweenProgress*tweenProgress*tweenProgress);
 
-			var lookPoshead = input.endLocation.position - input.neckBone.position;
+			var lookPoshead = input.endLocation.position - defaultheadPosition;
 			var newheadRotation = Quaternion.LookRotation(lookPoshead);
-			Quaternion desiredheadRotation = Quaternion.Lerp(input.neckBone.rotation, newheadRotation, tweenProgress);
 
+			Quaternion desiredheadRotation = Quaternion.Lerp(defaultheadRotation, newheadRotation, tweenProgress);
+			//Debug.Log (tweenProgress + " tweenprogress");
 
 			desiredRotation = NormalizeQuaternion(desiredRotation);
+
 			desiredheadRotation = NormalizeQuaternion(desiredheadRotation);
 
 			if (Quaternion.Dot (blendedRotation, desiredRotation) < 0f)
 				desiredRotation = ScaleQuaternion (desiredRotation, -1f);
 			
 			// head
-			if (Quaternion.Dot (blendedheadRotation, desiredheadRotation) < 0f)
-				desiredheadRotation = ScaleQuaternion (desiredheadRotation, -1f);
+			//if (Quaternion.Dot (blendedheadRotation, desiredheadRotation) < 0f)
+			//	desiredheadRotation = ScaleQuaternion (desiredheadRotation, -1f);
 			
 
 			desiredRotation = ScaleQuaternion(desiredRotation, inputWeight);
@@ -80,13 +90,14 @@ public class LookAtControllerMixerBehaviour : PlayableBehaviour
 			blendedheadRotation = AddQuaternions (blendedheadRotation, weightedheadDefaultRotation);
 		
 			input.neckBone.rotation = blendedheadRotation;
+
+			if (tweenProgress == 1.0f)
+				m_FirstFrameHappened = false;
 		
 		}
-		//Quaternion weightedheadDefaultRotation = ScaleQuaternion (defaultheadRotation, 1f - rotationTotalWeight);
-		//blendedheadRotation = AddQuaternions (blendedheadRotation, weightedheadDefaultRotation);
-		
-		//if (headTransform != null)
-		//	headTransform.rotation = blendedheadRotation;
+
+
+
 
 		Quaternion weightedDefaultRotation = ScaleQuaternion (defaultRotation, 1f - rotationTotalWeight);
 		blendedRotation = AddQuaternions (blendedRotation, weightedDefaultRotation);
