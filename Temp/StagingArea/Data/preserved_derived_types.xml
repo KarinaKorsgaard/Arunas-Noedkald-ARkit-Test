@@ -125,6 +125,7 @@
 <type fullname="LookAtControllerTrack" preserve="all"/>
 <type fullname="UnityEngine.XR.iOS.ConnectToEditor" preserve="all"/>
 <type fullname="UnityEngine.XR.iOS.UnityRemoteVideo" preserve="all"/>
+<type fullname="ARCameraManager" preserve="all"/>
 <type fullname="UnityEngine.XR.iOS.ARhitTest" preserve="all"/>
 <type fullname="Block" preserve="all"/>
 <type fullname="Mapbox.Examples.LocationProvider.CopyPositionWithLocationProvider" preserve="all"/>

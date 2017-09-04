@@ -79,6 +79,7 @@ public class GameManager : GenericSingletonClass<GameManager> {
 		StartCoroutine (ActivateOnPosition ());
 
 		print ("pause tracking");
+		EventManager.TriggerEvent ("PauseTracking");
 		//arCamManager.pauseTracking ();
 	}
 
@@ -90,7 +91,7 @@ public class GameManager : GenericSingletonClass<GameManager> {
 
 		Debug.Log ("loading ar scene");
 		DebugConsole.Log ("reset tracking");
-
+		EventManager.TriggerEvent ("ResetTracking");
 		//arCamManager.resetTracking ();
 		EventManager.TriggerEvent ("PlaceObjectsOnFloor");
 	}
@@ -123,6 +124,7 @@ public class GameManager : GenericSingletonClass<GameManager> {
 				hasBeenPaused = true;
 			//	arCamManager.currentConfig = 0;
 			//	arCamManager.pauseTracking ();
+				EventManager.TriggerEvent ("PauseTracking");
 				DebugConsole.Log ("tracking paused");
 				Debug.Log ("tracking paused");
 			}
@@ -131,6 +133,7 @@ public class GameManager : GenericSingletonClass<GameManager> {
 				hasBeenPaused = false;
 			//	arCamManager.currentConfig = 0;
 			//	arCamManager.resetTracking ();
+				EventManager.TriggerEvent ("ResetTracking");
 				DebugConsole.Log ("tracking reset");
 				Debug.Log ("tracking reset");
 				EventManager.TriggerEvent ("PlaceObjectsOnFloor");

@@ -94,7 +94,7 @@ public class Block : MonoBehaviour {
 
 		} else {
 			EventManager.TriggerEvent ("BlockStopped");
-			EventManager.TriggerEvent ("loadGPSMap");
+			//EventManager.TriggerEvent ("loadGPSMap");
 			//EventManager.TriggerEvent ("loadGPSMap");
 			Debug.Log ("BLOCK stopped");
 		}

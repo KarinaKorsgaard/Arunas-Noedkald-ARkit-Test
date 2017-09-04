@@ -17,7 +17,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1a2b2a39f1365475281c441cf82a1d7f, type: 2}
   m_Vals:
   - timeInFrames: 1
-    timeAreaShownRange: {x: -5, y: 5}
+    timeAreaShownRange: {x: -0.11325028, y: 9.886749}
     m_Keys: []
     m_Vals: []
   - timeInFrames: 1

@@ -61,6 +61,7 @@
      <Compile Include="Assets\Resources\UnityARKitPlugin\ARKitRemote\ObjectSerializationExtension.cs" />
      <Compile Include="Assets\Resources\UnityARKitPlugin\ARKitRemote\SerializableObjects.cs" />
      <Compile Include="Assets\Resources\UnityARKitPlugin\ARKitRemote\UnityRemoteVideo.cs" />
+     <Compile Include="Assets\Scripts\ARCameraManager.cs" />
      <Compile Include="Assets\Scripts\ARhitTest.cs" />
      <Compile Include="Assets\Scripts\Block.cs" />
      <Compile Include="Assets\Scripts\CopyPositionWithLocationProvider.cs" />

@@ -27,7 +27,7 @@ public class LookAtControllerMixerBehaviour : PlayableBehaviour
 
 		Quaternion blendedRotation = new Quaternion(0f, 0f, 0f, 0f);
 		Quaternion blendedheadRotation = new Quaternion(0f, 0f, 0f, 0f);
-
+		//Transform headTransform;
 
 
 		for (int i = 0; i < inputCount; i++)
@@ -44,50 +44,49 @@ public class LookAtControllerMixerBehaviour : PlayableBehaviour
 			input.startingRotation = defaultRotation;
 			defaultheadRotation = input.neckBone.rotation;
 
-			Transform headTransform;
-			headTransform = input.neckBone;
-
 			float normalisedTime = (float)(playableInput.GetTime() * input.inverseDuration);
 			float tweenProgress = input.currentCurve.Evaluate(normalisedTime);
 
 			rotationTotalWeight += inputWeight;
+
 			var lookPos = input.endLocation.position - input.startingPosition;
 			lookPos.y = 0;
 			var newRotation = Quaternion.LookRotation(lookPos);
 			Quaternion desiredRotation = Quaternion.Lerp(input.startingRotation, newRotation, tweenProgress);
 
-
 			var lookPoshead = input.endLocation.position - input.neckBone.position;
 			var newheadRotation = Quaternion.LookRotation(lookPoshead);
-			Quaternion desiredheadRotation = Quaternion.Lerp(headTransform.rotation, newheadRotation, tweenProgress);
+			Quaternion desiredheadRotation = Quaternion.Lerp(input.neckBone.rotation, newheadRotation, tweenProgress);
 
-			input.neckBone.rotation = desiredheadRotation;
 
 			desiredRotation = NormalizeQuaternion(desiredRotation);
-			//desiredheadRotation = NormalizeQuaternion(desiredheadRotation);
+			desiredheadRotation = NormalizeQuaternion(desiredheadRotation);
 
 			if (Quaternion.Dot (blendedRotation, desiredRotation) < 0f)
-			{
 				desiredRotation = ScaleQuaternion (desiredRotation, -1f);
-			}
-//			if (Quaternion.Dot (blendedheadRotation, desiredheadRotation) < 0f)
-//			{
-//				desiredheadRotation = ScaleQuaternion (desiredheadRotation, -1f);
-//			}
+			
+			// head
+			if (Quaternion.Dot (blendedheadRotation, desiredheadRotation) < 0f)
+				desiredheadRotation = ScaleQuaternion (desiredheadRotation, -1f);
+			
 
 			desiredRotation = ScaleQuaternion(desiredRotation, inputWeight);
 			blendedRotation = AddQuaternions (blendedRotation, desiredRotation);
 
-//			desiredheadRotation = ScaleQuaternion(desiredheadRotation, inputWeight);
-//			blendedheadRotation = AddQuaternions (blendedheadRotation, desiredheadRotation);
-//
+			desiredheadRotation = ScaleQuaternion(desiredheadRotation, inputWeight);
+			blendedheadRotation = AddQuaternions (blendedheadRotation, desiredheadRotation);
 
-//			Quaternion weightedheadDefaultRotation = ScaleQuaternion (defaultheadRotation, 1f - rotationTotalWeight);
-//			blendedheadRotation = AddQuaternions (blendedheadRotation, weightedheadDefaultRotation);
-//
-//			input.neckBone.rotation = blendedheadRotation;
+			Quaternion weightedheadDefaultRotation = ScaleQuaternion (defaultheadRotation, 1f - rotationTotalWeight);
+			blendedheadRotation = AddQuaternions (blendedheadRotation, weightedheadDefaultRotation);
+		
+			input.neckBone.rotation = blendedheadRotation;
+		
 		}
-
+		//Quaternion weightedheadDefaultRotation = ScaleQuaternion (defaultheadRotation, 1f - rotationTotalWeight);
+		//blendedheadRotation = AddQuaternions (blendedheadRotation, weightedheadDefaultRotation);
+		
+		//if (headTransform != null)
+		//	headTransform.rotation = blendedheadRotation;
 
 		Quaternion weightedDefaultRotation = ScaleQuaternion (defaultRotation, 1f - rotationTotalWeight);
 		blendedRotation = AddQuaternions (blendedRotation, weightedDefaultRotation);

@@ -258,3 +258,4 @@ a1d41d38fc0ffc365dc294688f92cb95 Assembly-CSharp-firstpass.dll:Mapbox.Unity.Mesh
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:.UnityARCameraNearFar
 658bf8334790d2ed35310347cc5219d9 Assembly-CSharp-firstpass.dll:Mapbox.Unity.MeshGeneration.Modifiers.ModifierStack
 1ac706dc56f80fcc121fbeefe3887317 Assembly-CSharp.dll:Mapbox.Examples.LocationProvider.CopyPositionWithLocationProvider
+63ee4d254596e7e33706786578d0fdfc Assembly-CSharp.dll:.ARCameraManager

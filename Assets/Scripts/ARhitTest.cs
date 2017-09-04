@@ -65,7 +65,7 @@ namespace UnityEngine.XR.iOS
 					ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingExtent, 
 					// if you want to use infinite planes use this:
 					//ARHitTestResultType.ARHitTestResultTypeExistingPlane,
-					//ARHitTestResultType.ARHitTestResultTypeHorizontalPlane, 
+					ARHitTestResultType.ARHitTestResultTypeHorizontalPlane, 
 					//ARHitTestResultType.ARHitTestResultTypeFeaturePoint
 				}; 
 
@@ -80,6 +80,7 @@ namespace UnityEngine.XR.iOS
 					else if (Input.GetKey("p"))
 					{
 						placed = true;
+						m_HitTransform.position = new Vector3 (0f, -0.5f, 0f);
 						EventManager.TriggerEvent ("StartBlock");
 						return;
 					} 
