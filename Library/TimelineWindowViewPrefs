@@ -11,5 +11,26 @@ MonoBehaviour:
   m_Script: {fileID: 12941, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Keys: []
-  m_Vals: []
+  m_Keys:
+  - {fileID: 11400000, guid: 84848bd083f2b4e4dbcc7b79a2a02c6e, type: 2}
+  - {fileID: 11400000, guid: c5f149810dadf4a22af1eaa4f6607072, type: 2}
+  - {fileID: 11400000, guid: 1a2b2a39f1365475281c441cf82a1d7f, type: 2}
+  m_Vals:
+  - timeInFrames: 1
+    timeAreaShownRange: {x: -5, y: 5}
+    m_Keys: []
+    m_Vals: []
+  - timeInFrames: 1
+    timeAreaShownRange: {x: 2.6182945, y: 197.50494}
+    m_Keys:
+    - {fileID: 114196955242680682, guid: c5f149810dadf4a22af1eaa4f6607072, type: 2}
+    - {fileID: 114140203831670956, guid: c5f149810dadf4a22af1eaa4f6607072, type: 2}
+    m_Vals:
+    - collapsed: 0
+      showInlineCurves: 0
+    - collapsed: 0
+      showInlineCurves: 0
+  - timeInFrames: 1
+    timeAreaShownRange: {x: -0.19065966, y: 16.644587}
+    m_Keys: []
+    m_Vals: []

@@ -1,27 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Mapbox/Examples/LocationProvider/Scripts/PositionWithLocationProvider.cs">
     <Files>
-      <File FileName="Assets/Plugins/ARKit/iOS/UnityARKit/UnityARCameraManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/LookatController/lookatControllerBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets/LookatController/LookatControllerClip.cs" Line="1" Column="1" />
-      <File FileName="Assets/LookatController/lookatControllerTrack.cs" Line="1" Column="1" />
-      <File FileName="Assets/LookatController/LookatControllerMixerBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets/lookAtCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/DefaultPlayables/TransformTween/TransformTweenBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Block.cs" Line="17" Column="1" />
-      <File FileName="Assets/Scripts/Node.cs" Line="104" Column="4" />
-      <File FileName="Assets/Scripts/NodeManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MapManager.cs" Line="67" Column="1" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="20" Column="31" />
-      <File FileName="Assets/Scripts/GoogleStaticMap.cs" Line="555" Column="1" />
-      <File FileName="Assets/UnityARKitPlugin/ARKitRemote/ARKITREMOTE.txt" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CustomARCameraManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ARhitTest.cs" Line="66" Column="21" />
-      <File FileName="Assets/Plugins/ARKit/iOS/UnityARKit/UnityARHitTestExample.cs" Line="32" Column="6" />
-      <File FileName="Assets/Plugins/ARKit/iOS/UnityARKit/UnityARGeneratePlane.cs" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/ARKit/iOS/UnityARKit/PointCloudParticleExample.cs" Line="1" Column="1" />
-      <File FileName="Assets/MarkerAdder.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/DefaultPlayables/TransformTween/TransformTweenBehaviour.cs" Line="9" Column="1" />
+      <File FileName="Assets/Plugins/DefaultPlayables/TransformTween/TransformTweenClip.cs" Line="15" Column="39" />
+      <File FileName="Assets/Plugins/DefaultPlayables/TransformTween/TransformTweenMixerBehaviour.cs" Line="7" Column="1" />
+      <File FileName="Assets/Plugins/DefaultPlayables/TransformTween/TransformTweenTrack.cs" Line="12" Column="56" />
+      <File FileName="Assets/Plugins/ARKit/iOS/UnityARKit/UnityARVideo.cs" Line="49" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="111" Column="1" />
+      <File FileName="Assets/Scripts/NodeManager.cs" Line="136" Column="1" />
+      <File FileName="Assets/Plugins/Mapbox/Examples/LocationProvider/Scripts/PositionWithLocationProvider.cs" Line="61" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

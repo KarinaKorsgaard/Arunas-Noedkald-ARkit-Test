@@ -5,23 +5,20 @@ namespace UnityEngine.XR.iOS
 {
 	public class ARhitTest : MonoBehaviour
 	{
-		[HideInInspector]public bool placed = false;
+		[HideInInspector]public bool placed = true;
 		public Transform m_HitTransform;
 
 		void OnEnable ()
 		{
 			EventManager.StartListening ("PlaceObjectsOnFloor", PlaceObjectsOnFloor);
-
-
 		}
 
 		void OnDisable ()
 		{
 			EventManager.StopListening ("PlaceObjectsOnFloor", PlaceObjectsOnFloor);
-
 		}
 
-
+	
 		bool HitTestWithResultType (ARPoint point, ARHitTestResultType resultTypes)
 		{
 			List<ARHitTestResult> hitResults = UnityARSessionNativeInterface.GetARSessionNativeInterface ().HitTest (point, resultTypes);
@@ -41,24 +38,32 @@ namespace UnityEngine.XR.iOS
 			placed = false;
 			print ("hit test is placing");
 		}
-		// Update is called once per frame
-		void Update () {
 
+
+		void Update () {
+			if (Input.touchCount > 0) {
+				var touch = Input.GetTouch (0);
+				if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved) {
+					Debug.Log (m_HitTransform.position);
+				}
+			}
 			if (!placed) {
 
-				var screenPosition = Camera.main.ScreenToViewportPoint (new Vector2(Screen.width / 2, Screen.height / 2));
+				var screenMiddle = new Vector2 (Screen.width / 2f, Screen.height / 2f);
+				var screenPosition = Camera.main.ScreenToViewportPoint(screenMiddle);
+
 				ARPoint point = new ARPoint {
 					x = screenPosition.x,
 					y = screenPosition.y
 				};
-
+						
 				// prioritize reults types
 				ARHitTestResultType[] resultTypes = {
 					ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingExtent, 
 					// if you want to use infinite planes use this:
 					//ARHitTestResultType.ARHitTestResultTypeExistingPlane,
-					ARHitTestResultType.ARHitTestResultTypeHorizontalPlane, 
-					ARHitTestResultType.ARHitTestResultTypeFeaturePoint
+					//ARHitTestResultType.ARHitTestResultTypeHorizontalPlane, 
+					//ARHitTestResultType.ARHitTestResultTypeFeaturePoint
 				}; 
 
 				foreach (ARHitTestResultType resultType in resultTypes) {
@@ -66,14 +71,12 @@ namespace UnityEngine.XR.iOS
 						placed = true;
 						EventManager.TriggerEvent ("StartBlock");
 						return;
-
 					}
+
 					else if (Input.GetKey("p"))
 					{
 						placed = true;
-						m_HitTransform.position = new Vector3 (0f, -1.07f, 2.4f);
 						EventManager.TriggerEvent ("StartBlock");
-						//EventManager.TriggerEvent ("DisablePlaneTracking");
 						return;
 
 					} 

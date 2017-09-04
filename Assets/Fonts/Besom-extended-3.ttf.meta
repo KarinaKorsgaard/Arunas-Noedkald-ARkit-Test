@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b9152d452491241379ead063b2abaf2d
+timeCreated: 1504186602
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Besom extended
+  fontNames:
+  - Besom extended
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,18 +12,170 @@ MonoBehaviour:
   m_Name: Start_animationTimeline
   m_EditorClassIdentifier: 
   m_Id: 0
-  m_NextId: 10
+  m_NextId: 15
   m_Tracks:
   - {fileID: 114975454248683900}
   - {fileID: 114253309996147674}
-  - {fileID: 114307954972974502}
-  - {fileID: 114873052859289570}
+  - {fileID: 114935913531033996}
+  - {fileID: 114414013905098012}
   m_FixedDuration: 0
   m_EditorSettings:
     fps: 60
   m_UpdateMode: 0
   m_ParameterName: 
   m_DurationMode: 0
+--- !u!114 &114002142653694754
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: 8cf20aadb817f4fd4ab201550ec23bf8
+    defaultValue: {fileID: 0}
+--- !u!114 &114057897057600122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: 150d8c11b175e47fc9c430c2cf0de709
+    defaultValue: {fileID: 0}
+--- !u!114 &114058872190314910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip(Clone)
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: 0a82685433db842c2a944ccaa491c7a4
+    defaultValue: {fileID: 0}
+--- !u!114 &114072632262178558
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: 94139a4b4eabc4771816e6d85a0add3e
+    defaultValue: {fileID: 0}
 --- !u!114 &114098540812870008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -36,16 +188,28 @@ MonoBehaviour:
   m_Name: LookatControllerClip
   m_EditorClassIdentifier: 
   template:
-    targetRotation: {fileID: 0}
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
     neckBone: {fileID: 0}
-    speed: 0
-    follow: 0
-    startPos: {x: 0, y: 0, z: 0}
-    endPos: {x: 0, y: 0, z: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
     inverseDuration: 0
-    startRotation: {x: 0, y: 0, z: 0, w: 0}
-  targetRotation:
-    exposedName: 6161e85cbb97144c78874a9291fdcce5
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
     defaultValue: {fileID: 0}
   neckBone:
     exposedName: 39ca6307018754046a7dfa76e5896391
@@ -62,15 +226,27 @@ MonoBehaviour:
   m_Name: LookatControllerClip
   m_EditorClassIdentifier: 
   template:
-    targetRotation: {fileID: 0}
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
     neckBone: {fileID: 0}
-    speed: 0
-    follow: 0
-    startPos: {x: 0, y: 0, z: 0}
-    endPos: {x: 0, y: 0, z: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
     inverseDuration: 0
-    startRotation: {x: 0, y: 0, z: 0, w: 0}
-  targetRotation:
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
     exposedName: 
     defaultValue: {fileID: 0}
   neckBone:
@@ -90,6 +266,630 @@ MonoBehaviour:
   m_Clip: {fileID: 8300000, guid: 4bb6e64b6d3c6450d881b8c93e1d9b83, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
+--- !u!114 &114216409843898850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Lookat Controller Track
+  m_EditorClassIdentifier: Assembly-CSharp::LookatControllerTrack
+  m_Locked: 0
+  m_Muted: 0
+  m_Soloed: 0
+  m_Height: 0
+  m_InlineAnimationCurveHeight: 100
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_MediaType: 3
+  m_Clips:
+  - m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 114072632262178558}
+    m_UnderlyingAsset: {fileID: 114072632262178558}
+    m_Duration: 0.48333333333333334
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114216409843898850}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: -1639841421
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
+  - m_Start: 0.48333333333333334
+    m_ClipIn: 0
+    m_Asset: {fileID: 114707233667413974}
+    m_UnderlyingAsset: {fileID: 114072632262178558}
+    m_Duration: 0.48333333333333334
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114216409843898850}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: -506993033
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
+  - m_Start: 0.9666666666666667
+    m_ClipIn: 0
+    m_Asset: {fileID: 114057897057600122}
+    m_UnderlyingAsset: {fileID: 114072632262178558}
+    m_Duration: 0.48333333333333334
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114216409843898850}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: -331730953
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
+  - m_Start: 1.45
+    m_ClipIn: 0
+    m_Asset: {fileID: 114002142653694754}
+    m_UnderlyingAsset: {fileID: 114072632262178558}
+    m_Duration: 0.48333333333333334
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114216409843898850}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: -1071313204
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
+  - m_Start: 1.9333333333333333
+    m_ClipIn: 0
+    m_Asset: {fileID: 114820251679390882}
+    m_UnderlyingAsset: {fileID: 114072632262178558}
+    m_Duration: 0.48333333333333334
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114216409843898850}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: 182175030
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
+  - m_Start: 2.4166666666666665
+    m_ClipIn: 0
+    m_Asset: {fileID: 114428514812909396}
+    m_UnderlyingAsset: {fileID: 114072632262178558}
+    m_Duration: 0.48333333333333334
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114216409843898850}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: 1778303315
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
+  - m_Start: 2.9
+    m_ClipIn: 0
+    m_Asset: {fileID: 114879873282333080}
+    m_UnderlyingAsset: {fileID: 114072632262178558}
+    m_Duration: 0.48333333333333334
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114216409843898850}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: -529771969
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
+  - m_Start: 3.3833333333333333
+    m_ClipIn: 0
+    m_Asset: {fileID: 114578228161565418}
+    m_UnderlyingAsset: {fileID: 114072632262178558}
+    m_Duration: 0.48333333333333334
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114216409843898850}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: -108396584
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
+  - m_Start: 3.8666666666666667
+    m_ClipIn: 0
+    m_Asset: {fileID: 114919630077348512}
+    m_UnderlyingAsset: {fileID: 114072632262178558}
+    m_Duration: 0.48333333333333334
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114216409843898850}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: 1002864906
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
+  - m_Start: 4.35
+    m_ClipIn: 0
+    m_Asset: {fileID: 114329909253180926}
+    m_UnderlyingAsset: {fileID: 114072632262178558}
+    m_Duration: 0.48333333333333334
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114216409843898850}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: 2126649017
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: Infinity
+    m_PreExtrapolationTime: 0
+    m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
+  <intervalBit>k__BackingField: 0
+  <displayCascadeClips>k__BackingField: 0
 --- !u!114 &114253309996147674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,7 +915,7 @@ MonoBehaviour:
     m_ClipIn: 0
     m_Asset: {fileID: 114533586748500952}
     m_UnderlyingAsset: {fileID: 114533586748500952}
-    m_Duration: 10.333333333333334
+    m_Duration: 4.983333333333333
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
@@ -177,6 +977,82 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Active
   m_PostPlaybackState: 0
+--- !u!114 &114267367847937612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip(Clone)
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: 94139a4b4eabc4771816e6d85a0add3e
+    defaultValue: {fileID: 0}
+--- !u!114 &114268821739772732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip(Clone)
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: 94139a4b4eabc4771816e6d85a0add3e
+    defaultValue: {fileID: 0}
 --- !u!114 &114307954972974502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,6 +1073,7 @@ MonoBehaviour:
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children: []
+  m_MediaType: 3
   m_Clips:
   - m_Start: 0
     m_ClipIn: 0
@@ -206,7 +1083,6 @@ MonoBehaviour:
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
-      serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -217,16 +1093,13 @@ MonoBehaviour:
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
-      serializedVersion: 2
       m_Curve:
-      - serializedVersion: 2
-        time: 0
+      - time: 0
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - serializedVersion: 2
-        time: 1
+      - time: 1
         value: 1
         inSlope: 0
         outSlope: 0
@@ -235,16 +1108,13 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
-      serializedVersion: 2
       m_Curve:
-      - serializedVersion: 2
-        time: 0
+      - time: 0
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - serializedVersion: 2
-        time: 1
+      - time: 1
         value: 0
         inSlope: 0
         outSlope: 0
@@ -263,6 +1133,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 1.2166666666666666
     m_PreExtrapolationTime: 0
     m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
   - m_Start: 2.5
     m_ClipIn: 0
     m_Asset: {fileID: 114558922340957644}
@@ -271,7 +1143,6 @@ MonoBehaviour:
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
-      serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -282,16 +1153,13 @@ MonoBehaviour:
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
-      serializedVersion: 2
       m_Curve:
-      - serializedVersion: 2
-        time: 0
+      - time: 0
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - serializedVersion: 2
-        time: 1
+      - time: 1
         value: 1
         inSlope: 0
         outSlope: 0
@@ -300,16 +1168,13 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
-      serializedVersion: 2
       m_Curve:
-      - serializedVersion: 2
-        time: 0
+      - time: 0
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - serializedVersion: 2
-        time: 1
+      - time: 1
         value: 0
         inSlope: 0
         outSlope: 0
@@ -328,6 +1193,8 @@ MonoBehaviour:
     m_PostExtrapolationTime: 4.096075364273218
     m_PreExtrapolationTime: 1.2166666666666666
     m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
   - m_Start: 7.879408697606551
     m_ClipIn: 0
     m_Asset: {fileID: 114735823689025348}
@@ -336,7 +1203,6 @@ MonoBehaviour:
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
-      serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -347,16 +1213,13 @@ MonoBehaviour:
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
-      serializedVersion: 2
       m_Curve:
-      - serializedVersion: 2
-        time: 0
+      - time: 0
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - serializedVersion: 2
-        time: 1
+      - time: 1
         value: 1
         inSlope: 0
         outSlope: 0
@@ -365,16 +1228,13 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
-      serializedVersion: 2
       m_Curve:
-      - serializedVersion: 2
-        time: 0
+      - time: 0
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - serializedVersion: 2
-        time: 1
+      - time: 1
         value: 0
         inSlope: 0
         outSlope: 0
@@ -393,6 +1253,132 @@ MonoBehaviour:
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 4.096075364273218
     m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
+  <intervalBit>k__BackingField: 0
+  <displayCascadeClips>k__BackingField: 0
+--- !u!114 &114312287039766396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Lookat Controller Track
+  m_EditorClassIdentifier: Assembly-CSharp::LookatControllerTrack
+  m_Locked: 0
+  m_Muted: 0
+  m_Soloed: 0
+  m_Height: 0
+  m_InlineAnimationCurveHeight: 100
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_MediaType: 3
+  m_Clips:
+  - m_Start: 0.03333333333333333
+    m_ClipIn: 0.3333333333333333
+    m_Asset: {fileID: 114923098398511696}
+    m_UnderlyingAsset: {fileID: 114923098398511696}
+    m_Duration: 4.95
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114312287039766396}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: -1639841419
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: Infinity
+    m_PreExtrapolationTime: 0.03333333333333333
+    m_DisplayName: LookatControllerClip
+    <dirtyHash>k__BackingField: 0
+    <recordingSelected>k__BackingField: 0
+  <intervalBit>k__BackingField: 0
+  <displayCascadeClips>k__BackingField: 0
+--- !u!114 &114329909253180926
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: f0d2dda4ffe934ec090849047930db49
+    defaultValue: {fileID: 0}
 --- !u!114 &114337724012120600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -432,7 +1418,7 @@ MonoBehaviour:
   m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
-  m_Parent: {fileID: 114873052859289570}
+  m_Parent: {fileID: 0}
   m_Children: []
   m_Clips: []
   m_OpenClipPreExtrapolation: 0
@@ -464,7 +1450,6 @@ MonoBehaviour:
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children: []
-  m_MediaType: 3
   m_Clips:
   - m_Start: 0
     m_ClipIn: 0
@@ -474,6 +1459,7 @@ MonoBehaviour:
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
+      serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -484,13 +1470,16 @@ MonoBehaviour:
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
+      serializedVersion: 2
       m_Curve:
-      - time: 0
+      - serializedVersion: 2
+        time: 0
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 1
+      - serializedVersion: 2
+        time: 1
         value: 1
         inSlope: 0
         outSlope: 0
@@ -499,13 +1488,16 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
+      serializedVersion: 2
       m_Curve:
-      - time: 0
+      - serializedVersion: 2
+        time: 0
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 1
+      - serializedVersion: 2
+        time: 1
         value: 0
         inSlope: 0
         outSlope: 0
@@ -524,10 +1516,168 @@ MonoBehaviour:
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 0
     m_DisplayName: LookatControllerClip
-    <dirtyHash>k__BackingField: -844668790
-    <recordingSelected>k__BackingField: 0
-  <intervalBit>k__BackingField: 0
-  <displayCascadeClips>k__BackingField: 0
+--- !u!114 &114414013905098012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db70bc46a90be48e6b9ea5043b4fee9f, type: 3}
+  m_Name: Look At Controller Track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_Soloed: 0
+  m_Height: 0
+  m_InlineAnimationCurveHeight: 100
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 114527473852470544}
+    m_UnderlyingAsset: {fileID: 114527473852470544}
+    m_Duration: 5
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114414013905098012}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: -1639841423
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: Infinity
+    m_PreExtrapolationTime: 0
+    m_DisplayName: LookAtControllerClip
+--- !u!114 &114428514812909396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: 94943e13c2b3f4f4d857e8863e85f574
+    defaultValue: {fileID: 0}
+--- !u!114 &114527473852470544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookAtControllerClip
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 1d6e7d1c67d584d71b9c182bee5fa8fe
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: a1f9c7644381e411c96617f03b2ed65b
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: fe5c4a502a0fe41e7b1c94e1a99b28e9
+    defaultValue: {fileID: 0}
 --- !u!114 &114533586748500952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -551,19 +1701,69 @@ MonoBehaviour:
   m_Name: LookatControllerClip
   m_EditorClassIdentifier: 
   template:
-    targetRotation: {fileID: 0}
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
     neckBone: {fileID: 0}
-    speed: 0
-    follow: 0
-    startPos: {x: 0, y: 0, z: 0}
-    endPos: {x: 0, y: 0, z: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
     inverseDuration: 0
-    startRotation: {x: 0, y: 0, z: 0, w: 0}
-  targetRotation:
-    exposedName: fe857290cfe324f4284041989adf6b16
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
     defaultValue: {fileID: 0}
   neckBone:
     exposedName: d1dae32be94c343bbb61ed897b48b008
+    defaultValue: {fileID: 0}
+--- !u!114 &114578228161565418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: 0d25cde097e5f4d4fa8b42341a2253ad
     defaultValue: {fileID: 0}
 --- !u!114 &114633314915573904
 MonoBehaviour:
@@ -577,19 +1777,69 @@ MonoBehaviour:
   m_Name: LookatControllerClip
   m_EditorClassIdentifier: 
   template:
-    targetRotation: {fileID: 0}
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
     neckBone: {fileID: 0}
-    speed: 1
-    follow: 1
-    startPos: {x: 0, y: 0, z: 0}
-    endPos: {x: 0, y: 0, z: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
     inverseDuration: 0
-    startRotation: {x: 0, y: 0, z: 0, w: 0}
-  targetRotation:
-    exposedName: f795c13913c9942efa354f3278481cdd
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
     defaultValue: {fileID: 0}
   neckBone:
     exposedName: 469cc2eb0da7c465fa36e6a15c6590e5
+    defaultValue: {fileID: 0}
+--- !u!114 &114707233667413974
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: 22732537ea6424fedbc28229de54d1f2
     defaultValue: {fileID: 0}
 --- !u!114 &114735823689025348
 MonoBehaviour:
@@ -603,21 +1853,185 @@ MonoBehaviour:
   m_Name: LookatControllerClip
   m_EditorClassIdentifier: 
   template:
-    targetRotation: {fileID: 0}
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
     neckBone: {fileID: 0}
-    speed: 0
-    follow: 0
-    startPos: {x: 0, y: 0, z: 0}
-    endPos: {x: 0, y: 0, z: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
     inverseDuration: 0
-    startRotation: {x: 0, y: 0, z: 0, w: 0}
-  targetRotation:
-    exposedName: cd16bce9b4e5243f8a0b0c961afec0c8
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
     defaultValue: {fileID: 0}
   neckBone:
     exposedName: ff3e96d40065740f9a0fe5ef4ecf1250
     defaultValue: {fileID: 0}
---- !u!114 &114873052859289570
+--- !u!114 &114820251679390882
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: 23ea41ceeaa97478db8f63e22e848edc
+    defaultValue: {fileID: 0}
+--- !u!114 &114879873282333080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: 108430f6966f443a0b35c8219a881b9a
+    defaultValue: {fileID: 0}
+--- !u!114 &114919630077348512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: c6d73ef3591c14de79471877f32cf2ed
+    defaultValue: {fileID: 0}
+--- !u!114 &114923098398511696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a64c1d72735417eb62b7745ff2e2f4, type: 3}
+  m_Name: LookatControllerClip
+  m_EditorClassIdentifier: 
+  template:
+    startLocation: {fileID: 0}
+    endLocation: {fileID: 0}
+    neckBone: {fileID: 0}
+    tweenType: 0
+    customStartingSpeed: 0
+    customEndingSpeed: 0
+    inverseDuration: 0
+    startingPosition: {x: 0, y: 0, z: 0}
+    startingRotation: {x: 0, y: 0, z: 0, w: 0}
+    startingheadPosition: {x: 0, y: 0, z: 0}
+    startingheadRotation: {x: 0, y: 0, z: 0, w: 0}
+    currentCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  startLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  endLocation:
+    exposedName: 
+    defaultValue: {fileID: 0}
+  neckBone:
+    exposedName: 38f644947e5d64c3396e98063b6c3862
+    defaultValue: {fileID: 0}
+--- !u!114 &114935913531033996
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -637,7 +2051,74 @@ MonoBehaviour:
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children: []
-  m_Clips: []
+  m_Clips:
+  - m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 114310305211383404, guid: c5f149810dadf4a22af1eaa4f6607072,
+      type: 2}
+    m_UnderlyingAsset: {fileID: 114310305211383404, guid: c5f149810dadf4a22af1eaa4f6607072,
+      type: 2}
+    m_Duration: 5
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114935913531033996}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: -1639841422
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: Infinity
+    m_PreExtrapolationTime: 0
+    m_DisplayName: AnimationPlayableAsset of motionplus0(Clone)
   m_OpenClipPreExtrapolation: 0
   m_OpenClipPostExtrapolation: 0
   m_OpenClipOffsetPosition: {x: 0, y: 0, z: 0}
@@ -668,11 +2149,11 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 0.01988488808274269
+  - m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 114207436781021414}
     m_UnderlyingAsset: {fileID: 8300000, guid: 4bb6e64b6d3c6450d881b8c93e1d9b83, type: 3}
-    m_Duration: 9.142857142857142
+    m_Duration: 4.983333333333333
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:

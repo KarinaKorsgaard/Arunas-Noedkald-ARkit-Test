@@ -38,7 +38,7 @@ public class TransformTweenMixerBehaviour : PlayableBehaviour
             {
                 input.startingPosition = defaultPosition;
                 input.startingRotation = defaultRotation;
-                m_FirstFrameHappened = true;
+               // m_FirstFrameHappened = true;
             }
 
             float normalisedTime = (float)(playableInput.GetTime() * input.inverseDuration);
@@ -47,16 +47,29 @@ public class TransformTweenMixerBehaviour : PlayableBehaviour
             if (input.tweenPosition)
             {
                 positionTotalWeight += inputWeight;
-
                 blendedPosition += Vector3.Lerp(input.startingPosition, input.endLocation.position, tweenProgress) * inputWeight;
             }
 
             if (input.tweenRotation)
             {
                 rotationTotalWeight += inputWeight;
+				var lookPos =input.endLocation.position - input.startingPosition;
+				lookPos.y = 0;
+				var newRotation = Quaternion.LookRotation(lookPos);
 
-                Quaternion desiredRotation = Quaternion.Lerp(input.startingRotation, input.endLocation.rotation, tweenProgress);
-                desiredRotation = NormalizeQuaternion(desiredRotation);
+				Quaternion desiredRotation = Quaternion.Lerp(input.startingRotation, newRotation, tweenProgress);
+				/*
+				var lookPos = target.position - body.position;
+				lookPos.y = 0;
+				var newRotation = Quaternion.LookRotation(lookPos);
+				body.rotation = Quaternion.Slerp(body.rotation, newRotation, tweenProgress*tweenProgress*tweenProgress);
+
+				lookPos = target.position - head.position;
+				newRotation = Quaternion.LookRotation(lookPos);
+
+				var headFull = Quaternion.Slerp(head.rotation, newRotation, tweenProgress) ;
+				*/
+				desiredRotation = NormalizeQuaternion(desiredRotation);
 
                 if (Quaternion.Dot (blendedRotation, desiredRotation) < 0f)
                 {
@@ -73,7 +86,7 @@ public class TransformTweenMixerBehaviour : PlayableBehaviour
         Quaternion weightedDefaultRotation = ScaleQuaternion (defaultRotation, 1f - rotationTotalWeight);
         blendedRotation = AddQuaternions (blendedRotation, weightedDefaultRotation);
 
-        trackBinding.position = blendedPosition;
+       // trackBinding.position = blendedPosition;
         trackBinding.rotation = blendedRotation;
     }
 

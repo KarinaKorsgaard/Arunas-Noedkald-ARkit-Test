@@ -33,6 +33,8 @@ public class CustomARCameraManager : MonoBehaviour {
 		m_camera = Camera.main;
 		}
 		#else
+		config = new ARKitWorldTackingSessionConfiguration();
+		configNoPlane = config;
 		//put some defaults so that it doesnt complain
 		UnityARCamera scamera = new UnityARCamera ();
 		scamera.worldTransform = new UnityARMatrix4x4 (new Vector4 (1, 0, 0, 0), new Vector4 (0, 1, 0, 0), new Vector4 (0, 0, 1, 0), new Vector4 (0, 0, 0, 1));
@@ -45,21 +47,21 @@ public class CustomARCameraManager : MonoBehaviour {
 	}
 
 	public void disablePlanetracking(){
-		m_session.RunWithConfig(configNoPlane);
+	//	m_session.RunWithConfig(configNoPlane);
 		currentConfig = 1;
 	}
 
 	public void enablePlanetracking(){
-		m_session.RunWithConfig(config);
+	//	m_session.RunWithConfig(config);
 		currentConfig = 0;
 	}
 
 	public void pauseTracking(){
-		m_session.Pause ();
+	//	m_session.Pause ();
 	}
 
 	public void resetTracking(){
-		m_session.RunWithConfigAndOptions(config, UnityARSessionRunOption.ARSessionRunOptionResetTracking);
+	//	m_session.RunWithConfigAndOptions(config, UnityARSessionRunOption.ARSessionRunOptionResetTracking);
 		currentConfig = 0;
 	}
 

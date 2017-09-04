@@ -32,16 +32,16 @@ namespace UnityEngine.XR.iOS
 		void OnEnable ()
 		{
 			EventManager.StartListening ("PlayNode", PlayNode);
-			EventManager.StartListening ("SwitchDirectionTrue", SwitchDirectionTrue);
-			EventManager.StartListening ("SwitchDirectionFalse", SwitchDirectionFalse);
+//			EventManager.StartListening ("SwitchDirectionTrue", SwitchDirectionTrue);
+//			EventManager.StartListening ("SwitchDirectionFalse", SwitchDirectionFalse);
 
 		}
 
 		void OnDisable ()
 		{
 			EventManager.StopListening ("PlayNode", PlayNode);
-			EventManager.StopListening ("SwitchDirectionTrue", SwitchDirectionTrue);
-			EventManager.StopListening ("SwitchDirectionFalse", SwitchDirectionFalse);
+//			EventManager.StopListening ("SwitchDirectionTrue", SwitchDirectionTrue);
+//			EventManager.StopListening ("SwitchDirectionFalse", SwitchDirectionFalse);
 		}
 
 		void Awake () {
@@ -67,15 +67,15 @@ namespace UnityEngine.XR.iOS
 			}
 		}
 
-		private void SwitchDirectionTrue(){
-			SwithDirection (true);
-		}
-
-		private void SwitchDirectionFalse(){
-			SwithDirection (false);
-		}
-
-
+//		private void SwitchDirectionTrue(){
+//			SwithDirection (true);
+//		}
+//
+//		private void SwitchDirectionFalse(){
+//			SwithDirection (false);
+//		}
+//
+//
 
 		private IEnumerator Play(){
 			
@@ -92,7 +92,7 @@ namespace UnityEngine.XR.iOS
 			stopNode ();
 		}
 
-		private void SwithDirection(bool b){
+		public void SwithDirection(bool b){
 			defaultAnimation = false;
 			switchDirection = b;
 			StopCoroutine("Play");

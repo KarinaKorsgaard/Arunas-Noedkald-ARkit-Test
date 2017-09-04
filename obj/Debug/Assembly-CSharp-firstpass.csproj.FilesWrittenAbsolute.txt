@@ -21,3 +21,4 @@
 /Users/karinajensen/Desktop/Tommy AR/development/NC/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
 /Users/karinajensen/Desktop/Tommy AR/development/NC/obj/Debug/Assembly-CSharp-firstpass.dll
 /Users/karinajensen/Desktop/Tommy AR/development/NC/obj/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/karinajensen/Desktop/Tommy AR/development/NC/Temp/bin/Debug/Mapbox.Json.dll

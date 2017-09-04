@@ -24,13 +24,13 @@ namespace UnityEngine.XR.iOS
 		
 		// Update is called once per frame
 		void Update () {
-			//if (Input.touchCount > 0 && m_HitTransform != null)
-		//	{
-				//var touch = Input.GetTouch(0);
-				//if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
-				//{
-					Vector2 touch = new Vector2(Screen.width/2,Screen.height/2);
-					var screenPosition = Camera.main.ScreenToViewportPoint(touch);
+			if (Input.touchCount > 0 && m_HitTransform != null)
+			{
+				var touch = Input.GetTouch(0);
+				if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
+				{
+					
+					var screenPosition = Camera.main.ScreenToViewportPoint(touch.position);
 					ARPoint point = new ARPoint {
 						x = screenPosition.x,
 						y = screenPosition.y
@@ -53,8 +53,8 @@ namespace UnityEngine.XR.iOS
                         }
                     }
 				}
-			//}
-		//}
+			}
+		}
 
 	
 	}
